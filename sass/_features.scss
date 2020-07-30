@@ -3,14 +3,28 @@
     
     margin: 15rem 0;
 
-    display: grid;
-    //grid-template-columns: repeat(3, 1fr);
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));//auto-fit adds as many tracks as fit in the container
-    grid-gap: 6rem;
-    align-items: start;
+    @supports(display:grid) {
+        display: grid;
+        //grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));//auto-fit adds as many tracks as fit in the container
+        grid-gap: 6rem;
+        align-items: start;
+    }
 }
 
 .feature {
+
+    //How to make a grid without flex or grid
+    float: left;
+    width: 33.33333%;
+    margin-bottom: 6rem;
+    //grid containers, grid items flex containers and flex items ignores floats, display inline block, display table-cell and vertical-align
+    
+    @supports(display: grid) {
+        width: auto;
+        margin-bottom: 0;
+    }
+
     display: grid;
     grid-template-columns: min-content 1fr;
     grid-row-gap: 1.5rem;
