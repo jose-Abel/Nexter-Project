@@ -2,7 +2,7 @@
 
 Project build mainly with HTML and CSS with the pre-processor SASS where I built the main webpage of a fictitious real state company for luxury houses called Nexter, following the guide in the Udemy course "Advanced CSS and Sass: Flexbox, Grid, Animations and More!" created by Jonas Schmedtmann.
 
-<!-- ![screenshot](./app_screenshot.png) -->
+![screenshot](./app_screenshot.png)
 
 
 ## Built With
@@ -22,7 +22,7 @@ Project build mainly with HTML and CSS with the pre-processor SASS where I built
 You can clone this code anytime and load the HTML on your browser.
 
 ## Live version
-Soon
+https://jose-abel.github.io/Nexter-Project
 
 
 ### Setup
